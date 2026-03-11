@@ -1,0 +1,27 @@
+# 1. Crear el objeto raíz (Indispensable para que el buscador no dé error 32)
+dn: dc=percyjackson,dc=security
+objectClass: top
+objectClass: dcObject
+objectClass: organization
+o: percyjackson
+dc: percyjackson
+
+# 2. Crear la Unidad Organizativa de Usuarios
+dn: ou=users,dc=percyjackson,dc=security
+objectClass: organizationalUnit
+ou: users
+
+# 3. Crear al usuario Percy (Con rol Admin y secreto MFA)
+dn: cn=percy,ou=users,dc=percyjackson,dc=security
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: percy
+sn: Jackson
+uid: percy
+uidNumber: 1000
+gidNumber: 5000
+homeDirectory: /home/percy
+loginShell: /bin/bash
+userPassword: pjs2026
+description: JBSWY3DPEHPK3PXP

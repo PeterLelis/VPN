@@ -1,0 +1,12 @@
+dn: cn=percy,ou=users,dc=percyjackson,dc=security
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: percy
+sn: Jackson
+uid: percy
+uidNumber: 10000
+gidNumber: 5000
+homeDirectory: /home/percy
+loginShell: /bin/bash
+userPassword: {SSHA}TU_CLAVE_CIFRADA_AQUI

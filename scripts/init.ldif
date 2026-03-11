@@ -1,0 +1,27 @@
+# Estructura para Usuarios
+dn: ou=users,dc=percyjackson,dc=security
+objectClass: organizationalUnit
+ou: users
+
+# Estructura para Grupos (Roles)
+dn: ou=groups,dc=percyjackson,dc=security
+objectClass: organizationalUnit
+ou: groups
+
+# Grupo Admin
+dn: cn=Admin,ou=groups,dc=percyjackson,dc=security
+objectClass: posixGroup
+cn: Admin
+gidNumber: 5000
+
+# Grupo IT
+dn: cn=IT,ou=groups,dc=percyjackson,dc=security
+objectClass: posixGroup
+cn: IT
+gidNumber: 5001
+
+# Grupo RRHH
+dn: cn=RRHH,ou=groups,dc=percyjackson,dc=security
+objectClass: posixGroup
+cn: RRHH
+gidNumber: 5002
