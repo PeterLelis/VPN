@@ -1,1 +1,4 @@
 Texto base para el conflicto.
+
+Versión de la rama prueba2.
+
