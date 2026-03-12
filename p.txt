@@ -1,1 +1,1 @@
-Esta es la prueba2, hecha para crear conflicto en git.
+Versión de la rama prueba2.
